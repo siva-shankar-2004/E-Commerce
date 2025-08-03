@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaju Shops</title>
+
+    <!--Style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google  fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Shaju Shops</h1>
+
+        <div class="navbar-links">
+            <p class="navvar-link"><a href="index.html">Home</a></p>
+            <p class="navvar-link"><a href="collection.html">Collection</a></p>
+            <p class="navvar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark close-icon"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </p>
+            <p class="side-navbar-link">
+                <a href="collection.html"><i class="fa-solid fa-layer-group"></i> Collection</a>
+            </p>
+            <p class="side-navbar-link">
+                <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+            </p>
+        </div>
+    </div>
+
+    <!--Product Search-->
+    <div class="product-section">
+        <form action="" class="product-search">
+            <input type="text" id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+    </div>
+
+    <!-- Products -->
+    <div class="products" id="product">
+
+        <div class="product-box">
+            <img src="images/Whitetshirt.jpg">
+            <p><a href="https://www.myntra.com/" style="text-decoration: none; color:black"> White T Shirt</a> </p>
+        </div>
+        <div class="product-box">
+            <img src="images/BlackShirt.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">BlackShirt</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/Whitepant.avif" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">White Pant</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/halfshorts.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">High-Waisted Black Denim
+                    Shorts</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/img2.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Red Leather Jacket &
+                    Hat</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/Cargo.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Beige Cargo Pants</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/Hoody.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Green Hoodie</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/Denim.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Light Blue Denim Jacket</a>
+            </p>
+        </div>
+        <div class="product-box">
+            <img src="images/whiteshoes.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">White Sneakers</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/belt.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Brown Leather Belts </a>
+            </p>
+        </div>
+        <div class="product-box">
+            <img src="images/blackcasual.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Black Casual Outfit</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/hat.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Belted Summer Dress with
+                    Hat</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/youngwoman.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Polka Dot Flowy Midi
+                    Dress</a></p>
+        </div>
+        <div class="product-box">
+            <img src="images/90sdress.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Sporty Belted Tracksuit</a>
+            </p>
+        </div>
+        <div class="product-box">
+            <img src="images/dresset.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Men’s Outfit Flat Lay</a>
+            </p>
+        </div>
+        <div class="product-box">
+            <img src="images/richsuit.jpg" alt="">
+            <p> <a href="https://www.myntra.com/" style="text-decoration: none; color:black">Maroon Blazer with Hat &
+                    Black Pants</a></p>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="footer-container">
+            <h2 class="headingtext">Shaju Shops</h2>
+
+            <p class="description">
+                Welcome to <strong>Shaju Shops</strong> – your go-to destination for stylish and trendy fashion. From
+                everyday
+                basics to bold statement pieces, we bring you a collection that blends comfort with style. Explore a
+                wide range
+                of handpicked clothing and accessories tailored for every vibe and occasion.
+            </p>
+            <div class="footer-icon-container">
+                <a href="https://www.instagram.com/myntra" target="_blank">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                </a>
+                <a href="https://twitter.com/myntra" target="_blank">
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                </a>
+                <a href="https://www.facebook.com/myntra" target="_blank">
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

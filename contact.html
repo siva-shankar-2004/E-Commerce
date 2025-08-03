@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaju Shops</title>
+
+  <!--Style.css-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--Google  fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* SweetAlert Modal Styling with Black & White Theme */
+    .swal-modal {
+      background-color: rgba(30, 30, 30, 0.6) !important;
+      border: 2px solid #ffffff66;
+      box-shadow: 0 0 25px #ffffff44;
+      margin-right: 18px;
+      color: #fff;
+    }
+
+    /* Title Styling */
+    .swal-title {
+      color: #ffffff !important;
+      text-shadow: 0 0 8px #ffffffaa;
+      font-family: 'Edu NSW ACT Cursive', cursive;
+    }
+
+    /* Text Styling */
+    .swal-text {
+      color: #e0e0e0 !important;
+      font-size: 1.1em;
+      text-shadow: 0 0 4px #ffffff33;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Confirm Button - White Glow */
+    .swal-button--confirm.custom-swal-button {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ffffffcc, 0 0 12px #ffffff66;
+      transition: 0.3s ease;
+    }
+
+    /* Hover State */
+    .swal-button--confirm.custom-swal-button:hover {
+      background-color: #f0f0f0;
+      box-shadow: 0 0 12px #ffffffcc, 0 0 18px #ffffffaa;
+      transform: scale(1.05);
+    }
+
+    /* Optional: Cancel button styling for consistency */
+    .swal-button--cancel {
+      background-color: transparent;
+      border: 1px solid #ffffff88;
+      color: #fff;
+      font-weight: normal;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .swal-button--cancel:hover {
+      background-color: #ffffff11;
+      box-shadow: 0 0 8px #ffffff55;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar">
+    <h1>Shaju Shops</h1>
+
+    <div class="navbar-links">
+      <p class="navvar-link"><a href="index.html">Home</a></p>
+      <p class="navvar-link"><a href="collection.html">Collection</a></p>
+      <p class="navvar-link"><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="navbar-menu-toggle" onclick="shownavbar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!--side navbar-->
+
+  <div class="side-navbar">
+    <p style="text-align: right;" onclick="closenavbar()">
+      <i class="fa-solid fa-xmark close-icon"></i>
+    </p>
+
+    <div class="side-navbar-links">
+      <p class="side-navbar-link">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      </p>
+      <p class="side-navbar-link">
+        <a href="collection.html"><i class="fa-solid fa-layer-group"></i> Collection</a>
+      </p>
+      <p class="side-navbar-link">
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <form class="contact-form" id="contactForm">
+      <h2>Contact Us</h2>
+
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="tel" id="phone" name="phone" placeholder="Contact Number" required pattern="[0-9]{10}">
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit" style="background-color: black; color:#fff">Send Message</button>
+
+    </form>
+  </section>
+
+
+  <!--Footer-->
+
+  <div class="footer">
+    <div class="footer-container">
+      <h2 class="headingtext">Shaju Shops</h2>
+
+      <p class="description">
+        Welcome to <strong>Shaju Shops</strong> – your go-to destination for stylish and trendy fashion. From everyday
+        basics to bold statement pieces, we bring you a collection that blends comfort with style. Explore a wide range
+        of handpicked clothing and accessories tailored for every vibe and occasion.
+      </p>
+
+      <div class="footer-icon-container">
+        <a href="https://www.instagram.com/myntra" target="_blank">
+          <i class="fa-brands fa-instagram" style="color: white;"></i>
+        </a>
+        <a href="https://twitter.com/myntra" target="_blank">
+          <i class="fa-brands fa-twitter" style="color: white;"></i>
+        </a>
+        <a href="https://www.facebook.com/myntra" target="_blank">
+          <i class="fa-brands fa-facebook" style="color: white;"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</body>
+<script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  // Contact Forms Js
+ document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  // ✅ Immediately show a popup after clicking submit
+  swal({
+    title: "Thank You!",
+    text: "Submitting your message...",
+    icon: "success",
+    buttons: false,
+    timer: 2000
+  });
+
+  // ✅ Disable the submit button to avoid multiple submissions
+  const submitBtn = this.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+
+  const userName = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const messageBody = `
+    <h3>New Contact Form Submission</h3>
+    <p><strong>Name:</strong> ${userName}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
+
+  const formData = new FormData(this);
+
+  try {
+    const res = await fetch('https://script.google.com/macros/s/AKfycby7EhV3KlOu81LkEHVVSryF1-7CSeYn-EPtJKP_TYUxh7_0XFyH5OeB0kvXtzHYuSXm/exec', {
+      method: 'POST',
+      body: formData
+    });
+
+    if (res.ok) {
+      document.getElementById("contactForm").reset();
+      // ✅ Optionally re-show a confirmation popup (if you want a second one)
+      // swal({
+      //   title: "Message Sent!",
+      //   text: "Your message has been saved successfully.",
+      //   icon: "success"
+      // });
+    } else {
+      swal("Error", "Failed to connect to Google Sheets.", "error");
+    }
+
+  } catch (error) {
+    console.error("Google Sheets error:", error);
+    swal("Error", "An unexpected error occurred.", "error");
+  }
+
+  // ✅ Re-enable the button after some delay
+  setTimeout(() => {
+    submitBtn.disabled = false;
+  }, 3000);
+});
+
+</script>
+
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbw2figOf_c_4zAsnKMLsjL8bjf9rDfp_EokB4GsF4fzLs5sghsutAy0SZNMqXXC3Uz0/exec -->
